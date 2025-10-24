@@ -9,20 +9,5 @@ namespace GestioneFile
 {
     internal class Write
     {
-        private string testo;
-        StreamWriter sw;
-        
-        public Write()
-        {
-            sw = new StreamWriter("Info.txt");
-
-        }
-
-        public void ScriviFile(string t)
-        {
-            testo = t;
-            sw.WriteLine(testo);
-            sw.Close();
-        }
     }
 }
